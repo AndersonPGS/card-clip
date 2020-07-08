@@ -6,6 +6,43 @@ body {
     justify-items: center;
     align-items: center;
     font-family: 'Nunito', 'sans-serif';
-    color: #FFF9FB;
 }
 
+.inner {
+    background: #3BCEAC;
+    padding: 1em;
+    border-radius: 10px;
+    width: 300px;
+    clip-path: circle(10% at 90% 20%);
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+h1 {
+    color: #FFF9FB;
+    margin: 0;
+}
+
+p {
+    color: #FFF9FB;
+    font-size: .8rem;
+}
+
+.container:hover .inner{
+    clip-path: circle(75%);
+    background: #0EAD69;
+}
+
+span {
+    float: right;
+    color: #FFF9FB;
+    font-weight: bold;
+    transition: color .5s;
+    position: relative;
+    margin-right: 4%;
+    font-size: 40px;
+}
+
+.container:hover span{
+    color: rgba(0, 0, 0, 0);
+}
